@@ -1,0 +1,26 @@
+@startuml
+
+title Changing Unit program - Temperature Unit
+
+
+start
+
+:Input Start Unit; 
+if (Input correct Unit?) then (Right)
+    if (C or F) then (C)
+    else (F)
+endif
+:Input temperature number;
+if (C or F) then (C)
+:(float(tem)*1.8)+32;
+else (F)
+:tem=(float(tem)-32)/1.8;
+endif
+:Print Result;
+    stop
+else(Wrong)
+:print Wrong;
+end
+
+
+@enduml
