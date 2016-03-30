@@ -1,0 +1,26 @@
+﻿@startuml
+
+title Conditional - Activity Diagram 
+
+
+start
+
+:Input Score; 
+
+if (90<score<=100) then (Yse)
+:A;
+elseif (80<score<=90) then (Yse)
+:B;
+elseif (70<score<=80) then (Yes)
+:C;
+elseif (60<score<=79) then (Yes)
+:D;
+else
+:F;
+endif
+
+:Print Letter;
+
+stop
+
+@enduml
