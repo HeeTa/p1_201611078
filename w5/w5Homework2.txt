@@ -1,0 +1,31 @@
+﻿@startuml
+
+title Conditional - Activity Diagram 
+
+
+start
+
+:Input player1 R S P;
+:Input player2 R S P; 
+:R=0 S=1 P=2;
+:def player1-player2 -2=lose -1=win 0=draw 1=lose 2=win;
+
+if (==) then (True)
+:draw;
+elseif (=-2)
+:lose;
+elseif (=-1)
+:win;
+elseif (=1)
+:lose;
+elseif (=2)
+:win;
+else
+:error;
+endif
+
+:Print Letter;
+
+stop
+
+@enduml
