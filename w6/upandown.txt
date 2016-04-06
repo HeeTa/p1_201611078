@@ -1,0 +1,23 @@
+﻿@startuml
+
+title upanddown game
+
+
+start
+:min=1 max=10;
+:Input Numb(in range min~max)(check int);
+:tryNum=max/2;
+:repeattime=0;
+while (Num==tryNum)  is (No)
+    if(Num>tryNum?)
+        :tryNum=tryNum+tryNum/2;
+    else(No)
+        :tryNum=tryNum-tryNum)/2;
+    endif
+:repeattime=repeattime+1;
+endwhile (Yes)
+:print repeattime;
+
+stop
+
+@enduml
