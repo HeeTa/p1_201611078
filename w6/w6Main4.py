@@ -46,11 +46,26 @@ def lab6_2():
 	year=input("input year: ")
 	checkleap(year)
 	return year
+def upanddown():
+	min=1
+	max=10
+	trynum=max/2
+	num=input("Input Number: ")
+	repeattime=0
+	while num!=trynum:
+		if num>trynum:
+			trynum=trynum+trynum/2
+		else:
+			trynum=trynum-trynum/2
+		repeattime=repeattime+1
+	print "repeattime is "+str(repeattime)
+
 
 def main():
 	lab3()
 	lab6_1()
 	lab6_2()
+	upanddown()
 
 main()
 raw_input()
