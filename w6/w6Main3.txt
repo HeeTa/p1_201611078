@@ -1,0 +1,24 @@
+﻿@startuml
+
+title Repeat - Activity Diagram 
+
+
+start
+:sum=0;
+repeat
+
+if(%3==0 or %5==0)
+:sum=sum+i;
+else (fales)
+
+endif
+
+
+
+
+
+repeat while(1~1000, %3==0 or %5==0)
+:print sum;
+stop
+
+@enduml
