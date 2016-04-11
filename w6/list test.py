@@ -12,3 +12,5 @@ def main():
 	print sumList(y)
 main()
 raw_input("enter to exit")
+if __name__=="__main__":
+	main()
