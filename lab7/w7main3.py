@@ -1,4 +1,4 @@
-﻿def drawWithText():
+def drawWithText():
 	import turtle
 	wn=turtle.Screen()
 	t1=turtle.Turtle()
@@ -17,6 +17,14 @@
 	drawAt(-200,-300,"tryangle")
 	drawAt(100,200,"square")
 	drawAt(-100,-200,"pentagon")
+	x=[(0,0),(0,50),(50,50),(50,0),(0,0)]
+	def drawpath(path):
+		t1.penup()
+		t1.goto(path[1])
+		t1.pendown()
+		for i in range(len(path)):
+			t1.goto(path[i])
+	drawpath(x)
 	wn.exitonclick()
 def main():
 	drawWithText()
