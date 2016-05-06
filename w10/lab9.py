@@ -29,6 +29,14 @@ gangdong=(230851,232470)
 data={"jongro":jongro,"joongo":joongo,"youngsan":youngsan,"sucho":sucho,"sudong":sudong,"ganganam":ganganam,"gwangjin":gwangjin,"dongdemoon":dongdemoon,"joongrang":joongrang,"sungbook":sungbook,"gangbook":gangbook,"dobong":dobong,"nowon":nowon,"unpyung":unpyung,"sudemoon":sudemoon,"mapho":mapho,"yangchun":yangchun,"gangsu":gangsu,"gooro":gooro,"youngdungpo":youngdungpo,"dongjak":dongjak,"gwanak":gwanak,"songpa":songpa,"gangdong":gangdong}
 data
 popul=dict()
+sum_man=0
+sum_woman=0
+for i in data:
+    sum_man=sum_man+data[i][0]
+print ("Average of man is %d"% (sum_man/len(data)))
+for i in data:
+    sum_woman=sum_woman+data[i][1]
+print ("Average of man is %d"% (sum_woman/len(data)))
 for i in data:
     popul[str(i)]=data[i][0]+data[i][1]
 print popul
