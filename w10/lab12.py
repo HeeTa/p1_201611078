@@ -53,3 +53,6 @@ for i in word:
             break
     print num[0],num[1],num[2],num[3],num[4]
     print wordlist[0],wordlist[1],wordlist[2],wordlist[3],wordlist[4]
+for i in word:
+    if word[i]>=20:
+        print i
