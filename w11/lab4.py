@@ -19,6 +19,8 @@ def getlower(one,two):
 	else:
 		return two
 def isInLine(offset,turtlelocation,linepoints):
+	x=t1.pos()[0]
+	y=t1.pos()[1]
 	x1=linepoints[0][0]
 	x2=linepoints[1][0]
 	y1=linepoints[0][1]
@@ -27,12 +29,10 @@ def isInLine(offset,turtlelocation,linepoints):
 	x4=getbigger(x1,x2)
 	y3=getlower(y1,y2)
 	y4=getbigger(y1,y2)
-	for i in range(offset*-1,offset+1):
-		x=turtlelocation[0]+i
-		y=turtlelocation[1]+i
-		if x>=x3 and x<=x4 and y>=y3 and y<=y4:
-			return True
-			break
+	if x>=x3-offset and x<=x4+offset and y>=y3-offset and y<=y4+offset:
+		return True
+	else:
+		return False
 def check():
 	x=t1.pos()[0]
 	y=t1.pos()[1]
