@@ -1,0 +1,13 @@
+import time
+timeEdited=time.strftime('%Y-%m-%d %H:%M:%S')
+editor="SHC"
+edited="[{0} edited {1}]".format(editor,timeEdited)
+fin=open('output.txt','r')
+fout=open('outputUpper.txt','w')
+for line in fin:
+    toWrite=line
+    if line.count('line')>=1:
+        toWrite="{0}{1}".format(edited,line.replace('line','Line'))
+    fout.write(toWrite)
+fin.close()
+fout.close()
