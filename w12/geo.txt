@@ -1,0 +1,17 @@
+﻿name tryangle
+go
+right 120
+go
+right 120
+go
+right 120
+name square
+go
+right 90
+go
+right 90
+go
+right 90
+go
+right 90
+loc 0 0 -150 0 -150 -150 0 -150 0 0
