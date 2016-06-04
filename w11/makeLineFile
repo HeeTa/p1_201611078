@@ -1,0 +1,5 @@
+myfile=open("myfile.txt",'w')
+for i in range(10):
+  letter="line"+str(i)+ "\n"
+  myfile.write(letter)
+myfile.close()
